@@ -10,13 +10,13 @@ using System.Linq;
 namespace Holdprint.Api.Controllers
 {
     [Produces("application/json")]
-    [Route("api/Tasks")]
-    public class TasksController : Controller
+    [Route("api/Operations")]
+    public class OperationsController : Controller
     {
         private readonly IService<Operation, DTOOperation> _service;
         private readonly IRepositoryQuery<Operation, DTOOperation> _query;
 
-        public TasksController(IService<Operation, DTOOperation> service, IRepositoryQuery<Operation, DTOOperation> query)
+        public OperationsController(IService<Operation, DTOOperation> service, IRepositoryQuery<Operation, DTOOperation> query)
         {
             _service = service;
             _query = query;
