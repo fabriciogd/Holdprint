@@ -15,8 +15,13 @@
 # Tecnologies
 
   - AutoMapper: https://automapper.org/
-  - EntityFramework.Core - https://docs.microsoft.com/pt-br/ef/core/
-  - NET.Core - https://docs.microsoft.com/pt-br/dotnet/core/
-  - Linq - https://docs.microsoft.com/pt-br/dotnet/csharp/linq/
+  - EntityFramework.Core: https://docs.microsoft.com/pt-br/ef/core/
+  - NET.Core: https://docs.microsoft.com/pt-br/dotnet/core/
+  - Linq: https://docs.microsoft.com/pt-br/dotnet/csharp/linq/
+  
+# Documentation
+
+  - Swagger: https://swagger.io/
+      URL: http://localhost:port/swagger
   
   
