@@ -8,7 +8,7 @@ namespace Holdprint.Domain.Mappers
     {
         public void Configure(EntityTypeBuilder<Operation> builder)
         {
-            builder.ToTable("Task")
+            builder.ToTable("Operation")
                 .HasKey(a => a.Id);
         }
     }
