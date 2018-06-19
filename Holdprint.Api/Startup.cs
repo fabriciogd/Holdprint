@@ -11,6 +11,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
 using System.IO;
+using GlobalExceptionHandler.WebApi;
+using System;
+using System.Net;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace Holdprint.Api
 {
@@ -83,7 +88,25 @@ namespace Holdprint.Api
                     "Holdprint");
             });
 
+            ConfigureGlobalExceptionHandler(app);
+
             AutoMapperConfiguration.Configure();
+        }
+
+        public void ConfigureGlobalExceptionHandler(IApplicationBuilder app)
+        {
+            app.UseExceptionHandler().WithConventions(x =>
+            {
+                x.ForException<Exception>().ReturnStatusCode(StatusCodes.Status400BadRequest);
+                x.MessageFormatter(exception => JsonConvert.SerializeObject(new
+                {
+                    error = new
+                    {
+                        message = "Something went wrong",
+                        statusCode = StatusCodes.Status400BadRequest
+                    }
+                }));
+            });
         }
     }
 }
