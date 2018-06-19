@@ -21,7 +21,6 @@
   
 # Documentation
 
-  - Swagger: https://swagger.io/
-      URL: http://localhost:port/swagger
+  - Swagger: https://swagger.io/ - Url: http://localhost:port/swagger
   
   
