@@ -15,19 +15,10 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "http://localhost/Holdprint.Api",
+      "launchUrl": "http://localhost:65435/swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
-    },
-    "Holdprint.Api": {
-      "commandName": "IIS",
-      "launchBrowser": true,
-      "launchUrl": "http://localhost/Holdprint.Api",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "http://localhost:65436/"
     }
   }
 }
