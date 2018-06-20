@@ -7,6 +7,7 @@
   - Service: https://www.martinfowler.com/eaaCatalog/serviceLayer.html
   - DTO: https://martinfowler.com/eaaCatalog/dataTransferObject.html
   - Poco: http://www.eduardopires.net.br/2012/10/classes-poco/
+  - Ioc: https://www.martinfowler.com/articles/injection.html
   
 # Database
   
